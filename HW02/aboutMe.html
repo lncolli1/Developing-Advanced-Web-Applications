@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+	<style>
+		section:before{
+			height: 54px;
+			content: "";
+			display: block;
+		}
+		section{
+			min-height: 100vh;
+		}
+		#section-showcase{
+			background-image: url(./images/showcase.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		
+		html{
+			scroll-behavior:smooth; 
+		}
+	</style>
+</head>
+
+<body>
+		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-white'>	
+			<a class='navbar-brand text-dark' href="index1.html"><strong>Luke Collins</strong></a>
+			
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			
+			<div class='collapse navbar-collapse' id='menu'>
+			<ul class='nav navbar-nav ml-auto'>
+				<li class='nav-item'>	<a class='text-dark nav-link' href="#section-about"> About </a>		</li>
+				<li class='nav-item'>	<a class='text-dark nav-link' href="post1.html"> Blog </a>			</li>
+			</ul>
+			</div>
+		</nav>				
+		
+		<section id="section-about" class='bg-white container-fluid pb-1'> 
+			<h1> About </h1>
+			<hr>
+			<div class='row'>
+				<div class="col-lg-10 col-sm-8">
+					<h4> Luke Collins </h4>
+					<p> I am a senior at the University of New Orleans studying computer science  </p>
+			</div>
+			</div>
+
+			<h1>Technical Skills</h1>
+
+			<p>Click the button below to view different programming skills I have learned over my college career.</p>
+
+			<button onclick="myFunction()">Click me</button>
+
+			<p id="demo"></p>
+
+			<script>
+			function myFunction() {
+			  document.getElementById("demo").innerHTML = "Programming Tools: Java, Javascript |  Frontend Tools: HTML, CSS, bootstrap  |  Version Control & Deployment Tools: git, github, gitlab";
+			}
+			</script>
+		</section>
+		
+		
+		
+		</div>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>	
