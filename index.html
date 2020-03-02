@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		section:before{
+			height: 54px;
+			content: "";
+			display: block;
+		}
+		section{
+			min-height: 10vh;
+		}
+		#section-showcase{
+			background-color:white;
+		}		
+		html{
+			scroll-behavior:smooth; 
+		}
+	</style>
+</head>
+
+<body>
+		<nav id="top-navbar" class='navbar fixed-top  navbar-expand-lg navbar-dark bg-white'>	
+			<a class='navbar-brand text-dark ' href="#section-showcase"><strong>Luke Collins</strong></a>
+			
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			
+			<div class='collapse navbar-collapse' id='menu'>
+			<ul class='nav navbar-nav ml-auto'>
+				<li class='nav-item'>	<a class='text-dark nav-link' href="aboutMe.html"> About </a>		</li>
+				<li class='nav-item'>	<a class='text-dark nav-link' href="post1.html"> Blog </a>		</li>
+			</ul>
+			</div>
+		</nav>
+		
+		<section id="section-showcase" class='jumbotron d-flex align-items-center'> 
+			<div class="container">
+				<img src="images/profile.png" class="img-circle mx-auto d-block" alt="Cinque Terre" width="200" height="200">
+			
+			<div class='bg-white container text-center text-dark'>
+				<h1> Luke Collins </h1>
+				<p> STUDENT | COMPUTER PROGRAMMER | MUSICIAN  </p>
+			</div>
+			</div>
+		</section>
+		
+		<footer class='bg-white'> 
+			<div class='container text-muted text-center'>
+				<p>Copyright & copy; 2020 Luke Collins</p>
+			</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>	
