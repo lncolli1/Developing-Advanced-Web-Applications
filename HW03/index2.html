@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <!-- bootstrap css -->
+ <link rel="stylesheet" href="./css/bootstrap.min.css">
+ <!-- main css -->
+ <link rel="stylesheet" href="./css/main.css">
+ <!-- google fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+ <!-- font awesome -->
+ <link rel="stylesheet" href="./css/all.css">
+ <title>budget app</title>
+ <style>
+ </style>
+ 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+	<div id="examples">
+		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-white'>
+			<div class="example">		
+			<a class='navbar-brand text-dark hover hover-3' href="index.html"><strong>Luke Collins</strong></a>
+			</div>
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			
+			<div class='collapse navbar-collapse' id='menu'>
+			
+			<ul class='nav navbar-nav ml-left'>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="aboutMe.html"> About </a>		</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="post1.html"> Blog </a>			</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="projects.html"> Projects </a>		</li>
+				</div>
+			</ul>
+			</div>
+		</nav>
+	</div>
+	
+	
+	<style>
+		a {
+			margin-right: 10px;
+		}
+		.fab {
+			color: black;
+		}
+		</style>
+	<style>
+				@import "https://fonts.googleapis.com/css?family=Montserrat";
+				@import "https://fonts.googleapis.com/css?family=Lato";
+
+				/** Hover-related CSS **/
+
+				.nounderline {
+				  text-decoration: none !important
+				}
+
+				#examples {
+				  display: flex;
+				  flex-flow: column;
+
+				  background-color: white;
+				  opacity: 0.95;
+				  
+				}
+
+				#examples .example {
+				  display: flex;
+				  flex-flow: row nowrap;
+				 
+				}
+				#examples .example .hover {
+				  
+				  transition: all 0.2s ease-in-out;
+				  position: relative;
+				}
+				#examples .example .hover:before, #examples .example .hover:after {
+				  content: "";
+				  position: absolute;
+				  bottom: -10px;
+				  width: 0px;
+				  height: 3px;
+				  margin: 5px 0 0;
+				  transition: all 0.2s ease-in-out;
+				  transition-duration: 0.75s;
+				  opacity: 0;
+				  background-color: #2146be;
+				}
+				#examples .example .hover.hover-3:before {
+				  left: 50%;
+				}
+				#examples .example .hover.hover-3:after {
+				  right: 50%;
+				}
+				#examples .example:hover {
+				  cursor: pointer;
+				}
+				#examples .example:hover .hover:before, #examples .example:hover .hover:after {
+				  width: 100%;
+				  opacity: 1;
+				}
+				#examples .example:hover .hover.hover-3:before, #examples .example:hover .hover.hover-3:after, #examples .example:hover .hover.hover-4:before, #examples .example:hover .hover.hover-4:after {
+				  width: 50%;
+				}
+			</style>
+	
+
+ <div class="container-fluid">
+  <div class="row">
+   <div class="col-11 mx-auto pt-3">
+    <!-- title -->
+    <h3 class="text-uppercase mb-4"><strong>budget application</strong></h3>
+    <div class="row">
+     <div class="col-md-5 my-3">
+      <!-- budget feedback -->
+      <div class="budget-feedback alert alert-danger text-capitalize"><strong>budget feedback</strong></div>
+      <!-- budget form -->
+      <form id="budget-form" class=" budget-form">
+       <h5 class="text-capitalize"><strong>enter your weekly budget</strong></h5>
+       <div class="form-group">
+        <input type="number" class="form-control budget-input" id="budget-input">
+       </div>
+       <!-- submit button -->
+       <button type="submit" class="btn text-capitalize budget-submit" id="budget-submit"><strong>calculate</strong></button>
+      </form>
+     </div>
+	 
+    
+     <div class="col-md-5 my-3">
+      <!-- expense feedback -->
+      <div class="expense-feedback alert alert-danger text-capitalize"><strong>expense feedback</strong></div>
+      <!-- expense form -->
+      <form id="expense-form" class=" expense-form">
+       <h5 class="text-capitalize"><strong>enter expense title</strong></h5>
+       <div class="form-group">
+        <input type="text" class="form-control expense-input" id="expense-input">
+       </div>
+       <h5 class="text-capitalize"><strong>enter expense amount</strong></h5>
+       <div class="form-group">
+        <input type="number" class="form-control expense-input" id="amount-input">
+       </div>
+       <!-- submit button -->
+       <button type="submit" class="btn text-capitalize expense-submit" id="expense-submit"><strong>add expense</strong></button>
+      </form>
+     </div>
+     
+    </div>	 
+	 
+     <div class="col-md-14">
+      <!-- app info -->
+      <div class="row my-3">
+       <div class="col-4 text-center mb-2">
+        <h6 class="text-uppercase info-title"><strong>your weekly budget</strong></h6>
+        <h4 class="text-uppercase mt-2 budget" id="budget"><span>$ </span><span id="budget-amount">0</span></h4>
+       </div>
+       <div class="col-4 text-center">
+        <h6 class="text-uppercase info-title"><strong>your weekly expenses</strong></h6>
+        <h4 class="text-uppercase mt-2 expense" id="expense"><span>$ </span><span id="expense-amount">0</span></h4>
+       </div>
+       <div class="col-4 text-center">
+        <h6 class="text-uppercase info-title"><strong>your balance for the remainder of the week</strong></h6>
+        <h4 class="text-uppercase mt-2 balance" id="balance"> <span>$ </span><span id="balance-amount">0</span></h4>
+       </div>
+	   
+
+	   
+      </div>
+	  <div class="col-md-7 my-3">
+      <!-- expense list -->
+      <div class="expense-list" id="expense-list">
+
+       
+       <!-- single expense -->
+
+       <!-- <div class="expense">
+        <div class="expense-item d-flex justify-content-between align-items-baseline">
+
+         <h6 class="expense-title mb-0 text-uppercase list-item">- title</h6>
+         <h5 class="expense-amount mb-0 list-item">amount</h5>
+
+         <div class="expense-icons list-item">
+
+          <a href="#" class="edit-icon mx-2" data-id="${expense.id}">
+           <i class="fas fa-edit"></i>
+          </a>
+          <a href="#" class="delete-icon" data-id="${expense.id}">
+           <i class="fas fa-trash"></i>
+          </a>
+         </div>
+        </div>
+
+       </div> -->
+
+       <!-- end of single expense -->
+
+	   <div class="expense-list__info d-flex justify-content-between text-capitalize">
+			<h5 class="list-item"><strong>expense title</strong></h5>
+			<h5 class="list-item"><strong>expense value</strong></h5>
+			<h5 class="list-item"></h5>
+		</div>
+      </div>
+     </div>
+		
+		
+     </div>
+    </div>
+
+
+
+
+
+
+   </div>
+  </div>
+ </div>
+
+
+
+
+ <!-- jquery -->
+ <script src="./js/jquery-3.3.1.min.js"></script>
+ <!-- bootstrap js -->
+ <script src="./js/bootstrap.bundle.min.js"></script>
+ <!-- script js -->
+ <script src="./js/app.js"></script>
+</body>
+
+</html>

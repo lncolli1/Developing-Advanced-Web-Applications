@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+</head>
+
+<body>
+		<div id="examples">
+		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-white'>
+			<div class="example">		
+			<a class='navbar-brand text-dark hover hover-3' href="index.html"><strong>Luke Collins</strong></a>
+			</div>
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			
+			<div class='collapse navbar-collapse' id='menu'>
+			
+			<ul class='nav navbar-nav ml-left'>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="aboutMe.html"> About </a>		</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="post1.html"> Blog </a>			</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="projects.html"> Projects </a>		</li>
+				</div>
+			</ul>
+			</div>
+		</nav>
+		</div>
+		
+		
+		<style>
+		a {
+			margin-right: 10px;
+		}
+		.fab {
+			color: black;
+		}
+		</style>
+			
+			<style>
+				@import "https://fonts.googleapis.com/css?family=Montserrat";
+				@import "https://fonts.googleapis.com/css?family=Lato";
+
+				/** Hover-related CSS **/
+
+				.nounderline {
+				  text-decoration: none !important
+				}
+
+				#examples {
+				  display: flex;
+				  flex-flow: column;
+
+				  background-color: white;
+				  opacity: 0.95;
+				  
+				}
+
+				#examples .example {
+				  display: flex;
+				  flex-flow: row nowrap;
+				 
+				}
+				#examples .example .hover {
+				  
+				  transition: all 0.2s ease-in-out;
+				  position: relative;
+				}
+				#examples .example .hover:before, #examples .example .hover:after {
+				  content: "";
+				  position: absolute;
+				  bottom: -10px;
+				  width: 0px;
+				  height: 3px;
+				  margin: 5px 0 0;
+				  transition: all 0.2s ease-in-out;
+				  transition-duration: 0.75s;
+				  opacity: 0;
+				  background-color: #2146be;
+				}
+				#examples .example .hover.hover-3:before {
+				  left: 50%;
+				}
+				#examples .example .hover.hover-3:after {
+				  right: 50%;
+				}
+				#examples .example:hover {
+				  cursor: pointer;
+				}
+				#examples .example:hover .hover:before, #examples .example:hover .hover:after {
+				  width: 100%;
+				  opacity: 1;
+				}
+				#examples .example:hover .hover.hover-3:before, #examples .example:hover .hover.hover-3:after, #examples .example:hover .hover.hover-4:before, #examples .example:hover .hover.hover-4:after {
+				  width: 50%;
+				}
+			</style>
+		
+		<style>
+			p {
+			text-align: left;
+			padding-left: 100px;
+			padding-right: 100px;
+			line-height: 3 ;
+			text-indent: 50px;
+			}
+		</style>
+		
+		<section id="section-blog" class='bg-white container-fluid pb-1'> 
+			<h1 class="font-weight-bold"> BUDGET APP CREATION PROCESS </h1>
+			<hr>
+			<p style="font-size:15px; color:black; font-family:'Courier New'">
+			To create this budget app I first created a constructor called ‘constructor’.Inside the constructor class I created several instance variables 
+			with the method ‘getElementById’ with its appropriate ID’s. Following the constructor class I created the method ‘submitBudgetForm’ which sets 
+			the restrictions for the value of the budget. I then created the ‘showBalance’ which reveals the user input balance. The ‘submitExpenseForm’ 
+			lets the user submit his/her budget value into an actual form. The ‘addExpense’ method takes ‘(expense)’ as its parameter.
+
+			</p>
+			<p style="font-size:15px; color:black; font-family:'Courier New'">
+			The ‘totalExpense’ method calculates the total expense that the user input. The ‘editExpense’ which takes ‘(element)’ as its parameter lets 
+			the user edit their previously input values. The ‘deleteExpense’ method which also takes ‘(element)’ as its parameter lets the user delete 
+			their previously input values. I then added the function ‘eventListeners’ to handle any events dispatched by an EventTarget object
+			</p>
+			<small> Posted by Luke Collins on 2/27/2020</small>
+			<hr>
+		</section>
+		
+		
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>	

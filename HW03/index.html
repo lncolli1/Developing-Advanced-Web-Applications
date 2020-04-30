@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/d84b00abf7.js" crossorigin="anonymous"></script>
+	<style>
+		section:before{
+			height: 54px;
+			content: "";
+			display: block;
+		}
+		section{
+			min-height: 10vh;
+		}
+		#section-showcase{
+			background-color:white;
+		}		
+		html{
+			scroll-behavior:smooth; 
+		}
+	</style>
+</head>
+
+<body>
+		<div id="examples">
+		<nav id="top-navbar" class='navbar fixed-top navbar-expand-lg navbar-dark bg-white'>	
+			<div class="example">
+			<a class='navbar-brand text-dark hover hover-3' href="#section-showcase"><strong>Luke Collins</strong></a>
+			</div>
+			<button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#menu'>
+				<span class='navbar-toggler-icon'></span>
+			</button>
+			
+			<div class='collapse navbar-collapse' id='menu'>
+			<ul class='nav navbar-nav ml-auto'>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="aboutMe.html"> About </a>		</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="post1.html"> Blog </a>		</li>
+				</div>
+				<div class="example">
+				<li class='nav-item'>	<a class='text-dark nav-link hover hover-3' href="projects.html"> Projects </a>		</li>
+				</div>
+			</ul>
+			</div>
+		</nav>
+		</div>
+		
+		<style>
+				@import "https://fonts.googleapis.com/css?family=Montserrat";
+				@import "https://fonts.googleapis.com/css?family=Lato";
+
+				/** Hover-related CSS **/
+
+				.nounderline {
+				  text-decoration: none !important
+				}
+
+				#examples {
+				  display: flex;
+				  flex-flow: column;
+
+				  background-color: white;
+				  opacity: 0.95;
+				  
+				}
+
+				#examples .example {
+				  display: flex;
+				  flex-flow: row nowrap;
+				 
+				}
+				#examples .example .hover {
+				  
+				  transition: all 0.2s ease-in-out;
+				  position: relative;
+				}
+				#examples .example .hover:before, #examples .example .hover:after {
+				  content: "";
+				  position: absolute;
+				  bottom: -10px;
+				  width: 0px;
+				  height: 3px;
+				  margin: 5px 0 0;
+				  transition: all 0.2s ease-in-out;
+				  transition-duration: 0.75s;
+				  opacity: 0;
+				  background-color: #2146be;
+				}
+				#examples .example .hover.hover-3:before {
+				  left: 50%;
+				}
+				#examples .example .hover.hover-3:after {
+				  right: 50%;
+				}
+				#examples .example:hover {
+				  cursor: pointer;
+				}
+				#examples .example:hover .hover:before, #examples .example:hover .hover:after {
+				  width: 100%;
+				  opacity: 1;
+				}
+				#examples .example:hover .hover.hover-3:before, #examples .example:hover .hover.hover-3:after, #examples .example:hover .hover.hover-4:before, #examples .example:hover .hover.hover-4:after {
+				  width: 50%;
+				}
+			</style>
+		
+		<style>
+		a {
+			margin-right: 10px;
+		}
+		.fab {
+			color: black;
+		}
+		</style>
+		
+		<section id="section-showcase" class='jumbotron d-flex align-items-center'> 
+			<div class="container">
+				<img src="images/profile.png" class="img-circle mx-auto d-block" alt="Cinque Terre" width="200" height="200">
+			
+			<div class='bg-white container text-center text-dark'>
+				<h1 style="color:black"><strong> Luke Collins </strong></h1>
+				<p style="color:black"><strong> STUDENT | COMPUTER PROGRAMMER | MUSICIAN  </strong></p>
+			
+				<a href="https://github.com/lncolli1">
+					<i class="fab fa-github-square fa-2x"></i>
+				</a>
+				
+				<a href="https://www.linkedin.com/in/luke-collins-96a84a18b/">
+					<i class="fab fa-linkedin-in fa-2x"></i>
+				</a>
+				
+				<a href="https://www.facebook.com/kookylukey/">
+					<i class="fab fa-facebook-square fa-2x"></i>
+				</a>
+				
+			</div>
+			</div>
+		</section>
+		
+		<footer class='bg-white'> 
+			<div class='container text-muted text-center'>
+				<p>Copyright & copy; 2020 Luke Collins</p>
+			</div>
+		</footer>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>	
